@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organick</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="overlay"></div>
+		<header class="header">
+			<div class="big-container header__container">
+				<a class="header__logo" href="index.html">
+					<img src="images/svg/logo.svg" width="199" height="54" alt="Company logo">
+				</a>
+				<nav class="nav" title="Main menu">
+					<ul class="list-reset nav__list">
+						<li class="nav__item"><a class="nav__link nav__link--current" href="index.html">Home</a></li>
+						<li class="nav__item"><a class="nav__link" href="about.html">About Us</a></li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--drop">Pages</a>
+							<ul class="list-reset nav__list nav__list--dropdown dropdown-list">
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="services.html">Services</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="service-single.html">Service Single</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="portfolio.html">Portfolio</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link" href="team.html">Our Team</a>
+								</li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link" href="blog.html">Blog</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="shop.html">Shop</a></li>
+						<li class="nav__item"><a class="nav__link" href="contacts.html">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<form class="search-form" action="#">
+						<input class="input-reset search-form__input" autocomplete="off" type="search" name="search"
+							placeholder="Type to search...">
+						<button class="button-reset search-form__button" type="button" aria-label="Search">
+							<img src="images/svg/search.svg" alt="">
+						</button>
+					</form>
+					<button class="button-reset cart">Cart (<span>0</span>)</button>
+					<button class="burger" aria-label="Open menu" aria-expanded="false">
+						<span class="burger__line"></span>
+					</button>
+				</div>
+				<div class="modal modal-search">
+					<div class="modal__area modal-search__area">
+						<button class="button-reset modal__close modal-search__close" type="button"></button>
+						<form class="form-area" action="#">
+							<input class="input-reset form-area__input" type="search" placeholder="Search ..." autocomplete="off">
+							<button class="button-reset button form-area__button">Go</button>
+						</form>
+					</div>
+				</div>
+				<div class="modal modal-cart">
+					<div class="modal__area modal-cart__area">
+						<div class="modal-cart__wrap">
+							<div class="modal-cart__top">
+								<span class="title-reset modal-cart__name">Your Cart</span>
+								<button class="button-reset modal__close modal-cart__close" type="button"></button>
+							</div>
+							<div class="modal-cart__body">
+								<div class="text modal-cart__state">No items found.</div>
+								<a class="dianne-button modal-cart__link" href="shop.html">Go to shopping</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
