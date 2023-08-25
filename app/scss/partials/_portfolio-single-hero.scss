@@ -1,0 +1,16 @@
+.portfolio-single-hero{
+	min-height: 56.125rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include breakpoint1260{
+		min-height: 40rem;
+	}
+	@include breakpoint1024{
+		min-height: 27rem;
+	}
+	@include breakpoint576{
+		min-height: 22rem;
+		margin-bottom: 3rem;
+	}
+}

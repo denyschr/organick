@@ -1,0 +1,118 @@
+.home-about{
+	margin-bottom: 11rem;
+	background-color: var(--color-alabaster);
+	@include breakpoint1450{
+		margin-bottom: 7.5rem;
+	}
+	@include breakpoint1024{
+		margin-bottom: 3.5rem;
+	}
+	&__container{
+		display: grid;
+		grid-template-columns: 1fr 43.067485%;
+		gap: 0.9375rem;
+		padding-top: 5.4375rem;
+		padding-bottom: 7.0625rem;
+		@include breakpoint1260{
+			grid-template-columns: 1fr;
+			padding-top: 2.5rem;
+			padding-left: 1.875rem;
+			padding-right: 1.875rem;
+		}
+		@include breakpoint576{
+			padding-left: 0.9375rem;
+			padding-right: 0.9375rem;
+			padding-bottom: 4rem;
+		}
+	}
+	&__content{
+		align-self: center;
+	}
+	&__title{
+		max-width: 31.875rem;
+		margin: 0 0 0.875rem;
+		text-transform: none;
+		@include breakpoint576{
+			max-width: 100%;
+		}
+	}
+	&__text{
+		margin-bottom: 2.875rem;
+		p{
+			margin: 0;
+			&:not(:last-child){
+				margin-bottom: 1.25rem;
+			}
+		}
+		@include breakpoint1260{
+			max-width: 90%;
+		}
+		@include breakpoint1024{
+			max-width: 100%;
+		}
+		@include breakpoint576{
+			margin-bottom: 2rem;
+		}
+	}
+	&__list{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		row-gap: 1.875rem;
+		margin-bottom: 2.875rem;
+	}
+	&__item{
+		position: relative;
+		padding-left: 7.5rem;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+			width: 6.3125rem;
+			height: 6.3125rem;
+			border-radius: 1.25rem;
+			background-color: var(--color-white);
+			background-repeat: no-repeat;
+			background-position: center;
+			@include breakpoint576{
+				top: 0;
+				transform: none;
+				width: 5.0625rem;
+				height: 5.0625rem;
+			}
+		}
+		&:nth-child(1)::before{
+			padding: 1.4375rem 1.6875rem 2rem 1.3125rem;
+			background-size: 3.3125rem 2.9375rem;
+			background-image: url('../images/svg/vegan-food.svg');
+		}
+		&:nth-child(2)::before{
+			padding: 1.625rem 1.875rem 1.4375rem 1.1875rem;
+			background-size: 3.25rem 3.25rem;
+			background-image: url('../images/svg/mailbox.svg');
+		}
+		@include breakpoint576{
+			padding-left: 0;
+			padding-top: 6.25rem;
+		}
+	}
+}
+
+.home-about-point{
+	&__title{
+		margin: 0 0 0.4375rem;
+	}
+	&__text{
+		max-width: 31.25rem;
+		margin: 0;
+		@include breakpoint1260{
+			max-width: 80%;
+		}
+		@include breakpoint768{
+			max-width: 100%;
+		}
+	}
+}

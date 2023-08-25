@@ -1,0 +1,104 @@
+.about-hero{
+	margin-bottom: 10.1875rem;
+	@include breakpoint1260{
+		margin-bottom: 5rem;
+	}
+	@include breakpoint576{
+		margin-bottom: 3rem;
+	}
+	&__icon_1{
+		position: absolute;
+		left: 30%;
+		top: 4%;
+		width: 8.75rem;
+		height: 6.25rem;
+		@include breakpoint1260{
+			width: 6.25rem;
+			height: 5.625rem;
+		}
+		@include breakpoint768{
+			left: 24%;
+		}
+		@include breakpoint576{
+			left: 16%;
+			top: 8%;
+		}
+		@include breakpoint390{
+			left: 0;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		left: 30%;
+		bottom: 12.368421%;
+		@include breakpoint1260{
+			width: 4.25rem;
+			height: 5rem;
+		}
+		@include breakpoint576{
+			left: 40%;
+			bottom: 8%;
+		}
+	}
+	&__icon_3{
+		position: absolute;
+		z-index: 5;
+		left: 15%;
+		bottom: -3.75rem;
+		width: 15.9375rem;
+		height: 16.4375rem;
+		@include breakpoint1260{
+			width: 12.5rem;
+			height: 13.75rem;
+		}
+		@include breakpoint1024{
+			left: 11%;
+			width: 10rem;
+			height: 12rem;
+		}
+		@include breakpoint768{
+			left: 2%;
+		}
+		@include breakpoint576{
+			width: 8rem;
+			height: 10rem;
+		}
+	}
+	&__icon_4{
+		position: absolute;
+		right: 26%;
+		top: 0;
+		transform: rotate(100deg);
+		width: 6.875rem;
+		height: 6.125rem;
+		@include breakpoint1260{
+			width: 5.625rem;
+			height: 4.875rem;
+		}
+		@include breakpoint768{
+			right: 20%;
+		}
+		@include breakpoint390{
+			right: 0;
+		}
+	}
+	&__icon_5{
+		position: absolute;
+		right: 45%;
+		bottom: 8.421053%;
+		width: 7.5625rem;
+		height: 5.625rem;
+		@include breakpoint1260{
+			width: 6.25rem;
+			height: 5rem;
+		}
+		@include breakpoint768{
+			right: 40%;
+			width: 5rem;
+			height: 3.75rem;
+		}
+		@include breakpoint576{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.blog{
+	margin-bottom: 11.5rem;
+	@include breakpoint1024{
+		margin-bottom: 6rem;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 9rem 2.875rem;
+		@include breakpoint1024{
+			gap: 1.5rem;
+		}
+		@include breakpoint768{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

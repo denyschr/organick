@@ -1,0 +1,126 @@
+.portfolio-single{
+	margin-top: -10rem;
+	margin-bottom: 7.5rem;
+	@include breakpoint768{
+		margin-top: -6rem;
+		margin-bottom: 4.5rem;
+	}
+	@include breakpoint576{
+		margin-top: 0;
+	}
+	&__body{
+		max-width: 58.5rem;
+		margin: 0 auto;
+	}
+	&__title{
+		@extend %rb-bold;
+		margin: 0 0 1.5rem;
+		font-size: 2.1875rem;
+		@include breakpoint768{
+			margin: 0 0 1rem;
+		}
+		@include breakpoint576{
+			font-size: 1.7rem;
+		}
+		@include breakpoint390{
+			font-size: 1.5rem;
+		}
+	}
+	&__text{
+		&:not(:last-child){
+			margin-bottom: 2.5rem;
+		}
+		p{
+			margin: 0;
+			&:not(:last-child){
+				margin-bottom: 0.9375rem;
+			}
+		}
+	}
+	&__figure{
+		margin: 0 0 1.25rem;
+	}
+	&__img{
+		margin-bottom: 1.25rem;
+		overflow: hidden;
+		border-radius: 1.25rem;
+	}
+	&__figcaption{
+		text-align: center;
+	}
+}
+
+.portfolio-single-banner{
+	display: grid;
+	grid-template-columns: 63.642857% 1fr;
+	margin-bottom: 4.25rem;
+	overflow: hidden;
+	border-radius: 1.875rem;
+	background-color: var(--color-white);
+	box-shadow: 0 0.125rem 1.125rem rgba(0, 0, 0, .13);
+	@include breakpoint1260{
+		grid-template-columns: 57% 1fr;
+	}
+	@include breakpoint1024{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	&__left{
+		padding: 5.375rem 5.1875rem;
+		@include breakpoint1260{
+			padding: 3.125rem 3.3125rem;
+		}
+		@include breakpoint576{
+			padding: 3.125rem 2.5rem;
+		}
+	}
+	&__right{
+		padding: 6rem 6.9375rem;
+		background-color: #fafafa;
+		@include breakpoint1450{
+			padding: 5rem 3.75rem;
+		}
+		@include breakpoint1260{
+			padding: 3.75rem 2.5rem;
+		}
+		@include breakpoint576{
+			padding: 3rem 2.5rem;
+		}
+	}
+	&__title{
+		margin: 0 0 1.25rem;
+	}
+	&__descr{
+		margin: 0;
+	}
+	&__list{
+		display: flex;
+		flex-direction: column;
+		gap: 1.125rem;
+	}
+	&__item{
+		display: grid;
+		grid-template-columns: .8fr 1fr;
+		gap: 0.8125rem;
+		@include breakpoint1024{
+			display: flex;
+			align-items: center;
+		}
+		@include breakpoint576{
+			flex-direction: column;
+			align-items: start;
+		}
+	}
+	&__category{
+		position: relative;
+		&::after{
+			content: ':';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			@include breakpoint1024{
+				position: static;
+			}
+		}
+	}
+}

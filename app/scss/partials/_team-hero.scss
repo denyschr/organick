@@ -1,0 +1,86 @@
+.team-hero{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 9.375rem;
+	@include breakpoint1260{
+		margin-bottom: 5.625rem;
+	}
+	@include breakpoint768{
+		margin-bottom: 5rem;
+	}
+	@include breakpoint576{
+		margin-bottom: 4rem;
+	}
+	&__container{
+		position: static;
+		overflow: initial;
+	}
+	&__icon_1{
+		position: absolute;
+		right: 6%;
+		top: 8.157895%;
+		width: 6.875rem;
+		height: 5.625rem;
+		@include breakpoint1024{
+			right: 3%;
+		}
+		@include breakpoint768{
+			display: none;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		left: 8%;
+		top: 10.789474%;
+		@include breakpoint1024{
+			left: 3%;
+		}
+		@include breakpoint768{
+			display: none;
+		}
+	}
+	&__icon_3{
+		position: absolute;
+		left: 25%;
+		top: 27.631579%;
+		width: 5.5rem;
+		height: 5.5rem;
+		@include breakpoint1024{
+			top: 32%;
+			left: 15%;
+		}
+		@include breakpoint768{
+			top: 20%;
+			left: 8%;
+			width: 4.875rem;
+			height: 4.25rem;
+		}
+		@include breakpoint390{
+			top: 15%;
+			left: 5%;
+		}
+	}
+	&__icon_4{
+		position: absolute;
+		right: 25%;
+		top: 22.105263%;
+		width: 6.875rem;
+		height: 5rem;
+		@include breakpoint1024{
+			top: 35%;
+			right: 15%;
+			width: 5.625rem;
+			height: 5rem;
+		}
+		@include breakpoint768{
+			top: 20%;
+			right: 8%;
+			width: 5rem;
+			height: 5rem;
+		}
+		@include breakpoint390{
+			top: 10%;
+			right: 5%;
+		}
+	}
+}

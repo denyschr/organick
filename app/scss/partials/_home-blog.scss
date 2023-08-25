@@ -1,0 +1,58 @@
+.home-blog{
+	margin-bottom: 15.625rem;
+	@include breakpoint1260{
+		margin-bottom: 12rem;
+	}
+	@include breakpoint1024{
+		margin-bottom: 7rem;
+	}
+	@include breakpoint576{
+		margin-bottom: 5rem;
+	}
+	@include breakpoint390{
+		margin-bottom: 3rem;
+	}
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2.8125rem;
+		@include breakpoint1024{
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			row-gap: 1.875rem;
+		}
+	}
+	&-title-area{
+		max-width: 45rem;
+		padding-right: 0.9375rem;
+		@include breakpoint1260{
+			max-width: 40rem;
+		}
+		@include breakpoint1024{
+			max-width: 45rem;
+			padding-right: 0;
+		}
+		@include breakpoint768{
+			max-width: 100%;
+			padding-right: 0;
+		}
+	}
+	&__button{
+		align-self: flex-end;
+		@include breakpoint1024{
+			align-self: flex-start;
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 9rem 2.875rem;
+		@include breakpoint1024{
+			gap: 1.5rem;
+		}
+		@include breakpoint768{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

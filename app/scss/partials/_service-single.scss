@@ -1,0 +1,149 @@
+.service-single{
+	padding-bottom: 8.125rem;
+	@include breakpoint1024{
+		padding-bottom: 5rem;
+	}
+	&__img{
+		margin-bottom: 4.875rem;
+		@include breakpoint1024{
+			margin-bottom: 2.8rem;
+		}
+		@include breakpoint576{
+			margin-bottom: 1.5rem;
+		}
+	}
+	&__content{
+		max-width: 58.5rem;
+		margin: 0 auto;
+		@include breakpoint1024{
+			max-width: 100%;
+		}
+	}
+	&__title{
+		margin: 0 0 1.75rem;
+		@include breakpoint1024{
+			margin: 0 0 1.2rem;
+		}
+	}
+	&__text{
+		margin-bottom: 3.5rem;
+		p{
+			margin: 0;
+			&:not(:last-child){
+				margin-bottom: 0.9375rem;
+			}
+		}
+		@include breakpoint768{
+			margin-bottom: 2.5rem;
+		}
+	}
+	&__list{
+		counter-reset: number 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 1.75rem;
+	}
+	&__item{
+		position: relative;
+		counter-increment: number;
+		max-width: 28.75rem;
+		padding: 2.375rem 3.3125rem 2.375rem 6.9375rem;
+		text-align: center;
+		border-radius: 6.25rem;
+		background-color: var(--color-alabaster);
+		&::before{
+			@extend %rb-bold;
+			content: "0" counter(number);
+			position: absolute;
+			left: 1.0625rem;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 4.3125rem;
+			height: 4.3125rem;
+			border-radius: 2.1875rem;
+			background-color: var(--color-green);
+			color: var(--color-white);
+			font-size: 1.5625rem;
+			@include breakpoint576{
+				left: 50%;
+				transform: translateX(-50%);
+				top: 1.0625rem;
+			}
+		}
+		@include breakpoint576{
+			width: 100%;
+			max-width: 100%;
+			padding: 6.9375rem 3.3125rem 2.375rem 2.375rem ;
+		}
+		@include breakpoint390{
+			padding: 6.25rem 2rem 2.375rem 2rem ;
+		}
+	}
+}
+
+.service-single-block{
+	display: flex;
+	gap: 1.25rem;
+	@include breakpoint768{
+		flex-direction: column;
+	}
+	&--first{
+		margin-bottom: 1.75rem;
+	}
+	&--second{
+		margin-bottom: 4.375rem;
+		@include breakpoint768{
+			flex-direction: column-reverse;
+		}
+		@include breakpoint576{
+			margin-bottom: 3rem;
+		}
+	}
+	&__img{
+		align-self: center;
+		overflow: hidden;
+		border-radius: 1.25rem;
+		box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		flex-basis: 57.371795%;
+		padding: 3.625rem 3.125rem 3.75rem;
+		border-radius: 1.25rem;
+		background-color: var(--color-alabaster);
+		@include breakpoint1024{
+			padding: 2.1875rem 2.5rem 2.1875rem;
+		}
+		@include breakpoint390{
+			padding: 1.5625rem 1.875rem 1.5625rem;
+		}
+	}
+	&__title{
+		margin: 0 0 0.5rem;
+	}
+	&__descr{
+		margin: 0;
+	}
+}
+
+.service-single-features{
+	&__title{
+		margin: 0 0 0.6875rem;
+	}
+	&__text{
+		margin-bottom: 2.5rem;
+		p{
+			margin: 0;
+			&:not(:last-child){
+				margin-bottom: 0.9375rem;
+			}
+		}
+	}
+}

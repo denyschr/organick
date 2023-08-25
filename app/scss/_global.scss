@@ -1,0 +1,350 @@
+@import './mixins/breakpoint';
+@import './mixins/burger';
+@import './mixins/disable-mob-hover';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+body {
+  @extend %os-regular;
+  height: 100%;
+  overflow-x: clip;
+  background-color: var(--color-white);
+  color: var(--color-dianne);
+  text-transform: capitalize;
+}
+
+body.noscroll{
+  overflow-y: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: var(--header-height);
+  @include breakpoint1024{
+    margin-top: 7.5rem;
+  }
+  @include breakpoint390{
+    margin-top: 6.25rem;
+  }
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+}
+
+.big-container{
+  max-width: 101.875rem;
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+}
+
+.overlay{
+  position: fixed;
+	left: 0;
+	top: var(--header-height);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+  transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
+  &--active{
+    opacity: 1;
+		visibility: visible;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-reset{
+  margin: 0;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-reset{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.input-reset{
+  -webkit-appearance: none;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.burger {
+  @include burger;
+  display: none;
+  @include breakpoint1024{
+    display: block;
+  }
+}
+
+.button{
+  @extend %rb-bold;
+  padding: 1.75rem 3.375rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
+  cursor: pointer;
+  @include hover{
+    background-color: var(--color-white);
+  }
+  @include breakpoint390{
+    padding: 1.5rem 2.1875rem;
+    font-size: 1.125rem;
+  }
+}
+
+.blank-button, .golden-button, .dianne-button{
+  @extend %rb-bold;
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  background-image: url('../images/svg/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: 83%;
+  background-size: auto;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  @include hover{
+    background-position: 85%;
+  }
+  @include breakpoint390{
+    font-size: 1.125rem;
+  }
+}
+
+.golden-button, .dianne-button{
+  padding: 1.75rem 4.25rem 1.75rem 3.0625rem;
+  @include hover{
+    background-color: var(--color-white);
+  }
+  @include breakpoint576{
+    padding: 1.5rem 4.25rem 1.5rem 2.3125rem;
+  }
+  @include breakpoint390{
+    padding: 1.125rem 4.25rem 1.125rem 2.3125rem;
+  }
+}
+
+.blank-button{
+  padding: 1.75rem 4rem 1.75rem 2.8125rem;
+  border: 0.125rem solid var(--color-dianne);
+  background-color: var(--color-white);
+  @include hover{
+    color: var(--color-white);
+    background-color: var(--color-dianne);
+  }
+  @include breakpoint576{
+    padding: 1.5rem 4.25rem 1.5rem 2.3125rem;
+  }
+  @include breakpoint390{
+    padding: 1.125rem 4.25rem 1.125rem 2.3125rem;
+  }
+}
+
+.golden-button{
+  border: 0.125rem solid var(--color-golden);
+  background-color: var(--color-golden);
+}
+
+.button, .dianne-button{
+  border: 0.125rem solid var(--color-dianne);
+  background-color: var(--color-dianne);
+  color: var(--color-white);
+  @include hover{
+    color: var(--color-dianne);
+  }
+}
+
+.label{
+  @extend %yt-regular;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: var(--color-green);
+  font-size: 2.25rem;
+  @include breakpoint390{
+    font-size: 1.75rem;
+  }
+}
+
+.main-title{
+  @extend %rb-bold;
+  font-size: 4.375rem;
+  text-transform: none;
+  @include breakpoint1260{
+    font-size: 3.75rem;
+  }
+  @include breakpoint768{
+    font-size: 3.125rem;
+  }
+  @include breakpoint576{
+    font-size: 2.8125rem;
+  }
+  @include breakpoint390{
+    font-size: 2.25rem;
+  }
+}
+
+.section-title, .section-title-white{
+  @extend %rb-bold;
+  font-size: 3.125rem;
+  @include breakpoint1260{
+    font-size: 2.75rem;
+  }
+  @include breakpoint576{
+    font-size: 2.1875rem;
+  }
+  @include breakpoint390{
+    font-size: 1.75rem;
+  }
+}
+
+.section-title-white{
+  color: var(--color-white);
+}
+
+.bold-title, .medium-title{
+  font-size: 1.5625rem;
+  @include breakpoint390{
+    font-size: 1.25rem;
+  }
+}
+
+.bold-title{
+  @extend %rb-bold;
+}
+
+.medium-title{
+  @extend %rb-medium;
+}
+
+.text{
+  color: var(--color-abbey);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-transform: none;
+  @include breakpoint390{
+    font-size: 1rem;
+  }
+}
+
+.text-center{
+  text-align: center
+}
+
+.tag{
+  @extend %os-semibold;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-dianne);
+  text-align: center;
+  color: var(--color-white);
+  font-size: 0.9375rem;
+}
+
+.pricing{
+  @extend %os-bold;
+  font-size: 1.125rem;
+}
+
+.strikethrough-pricing{
+  @extend %os-semibold;
+  margin-right: 0.5rem;
+  color: var(--color-silver);
+  font-size: 0.9375rem;
+  text-decoration-line: line-through;
+}
+
+.swiper-slide{
+  height: unset;
+  min-height: 100%;
+}
+
+.swiper-pagination{
+  bottom: 0;
+}
+
+.swiper-pagination-bullet{
+  border-radius: 100%;
+  opacity: 1;
+  background-color: #c4c4c4;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--color-green);
+}

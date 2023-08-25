@@ -1,0 +1,65 @@
+.gallery{
+	margin-bottom: 11.0625rem;
+	background-color: #f1f8f4;
+	@include breakpoint1450{
+		margin-bottom: 6rem;
+	}
+	@include breakpoint390{
+		margin-bottom: 4rem;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2.375rem;
+		padding: 11.6875rem 0;
+		@include breakpoint1450{
+			padding: 7rem 0;
+		}
+		@include breakpoint1260{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include breakpoint1024{
+			padding: 5rem 0;
+		}
+		@include breakpoint768{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		@include breakpoint390{
+			padding: 3rem 0;
+		}
+	}
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 36.4375rem;
+		padding: 0.9375rem;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		@include breakpoint1450{
+			min-height: 30rem;
+		}
+		@include breakpoint1024{
+			min-height: 25rem;
+		}
+		@include breakpoint390{
+			min-height: 20rem;
+		}
+	}
+	&__button{
+		padding: 2.0625rem 5.1875rem;
+		border-radius: 1.25rem;
+		background-color: var(--color-white);
+		transition: background .2s ease-in-out;
+		@include hover{
+			background-color: var(--color-golden);
+		}
+		@include breakpoint1024{
+			padding: 1.875rem 3.125rem;
+		}
+		@include breakpoint390{
+			padding: 1.5625rem 2.1875rem;
+		}
+	}
+}

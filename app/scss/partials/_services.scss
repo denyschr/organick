@@ -1,0 +1,93 @@
+.services{
+	margin-bottom: 12.5rem;
+	@include breakpoint1260{
+		margin-bottom: 7.5rem;
+	}
+	@include breakpoint576{
+		margin-bottom: 5.5rem;
+	}
+	&__container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&-title-area{
+		max-width: 30.625rem;
+		@include breakpoint1260{
+			margin-bottom: 3.125rem;
+		}
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: 1fr 1.4fr 1fr;
+		gap: 1.25rem;
+		align-items: center;
+		@include breakpoint1260{
+			grid-template-columns: repeat(1, 1fr);
+			align-self: flex-start;
+			margin-bottom: 3.125rem;
+		}
+	}
+	&__list-left{
+		text-align: right;
+		@include breakpoint1260{
+			text-align: left;
+		}
+	}
+	&__list-right{
+		text-align: left;
+	}
+	&__list{
+		display: flex;
+		flex-direction: column;
+		row-gap: 2.4375rem;
+	}
+	&__img{
+		height: 61.875rem;
+		img{
+			height: 100%;
+		}
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+}
+
+.services-feature{
+	padding-top: 3.75rem;
+	background-size: 3.375rem 3.4375rem;
+	background-repeat: no-repeat;
+	&--dairy-products, &--store-services, &--delivery-services{
+		background-position: right top;
+		@include breakpoint1260{
+			background-position: left top;
+		}
+	}
+	&--dairy-products{
+		background-image: url('../images/svg/dairy-products.svg');
+	}
+	&--store-services{
+		background-image: url('../images/svg/store-services.svg');
+	}
+	&--delivery-services{	
+		background-image: url('../images/svg/delivery-services.svg');
+	}
+	&--agricultural-services{
+		background-position: left top;
+		background-image: url('../images/svg/agricultural-services.svg');
+	}
+	&--organick-products{
+		background-position: left top;
+		background-image: url('../images/svg/organick-products.svg');
+	}
+	&--fresh-vegetables{
+		background-position: left top;
+		background-image: url('../images/svg/fresh-vegetables.svg');
+	}
+	&__title{
+		margin: 0 0 0.3125rem;
+	}
+	&__descr{
+		margin: 0;
+	}
+}

@@ -1,0 +1,30 @@
+.services-video{
+	min-height: 67.0625rem;
+	margin-bottom: 8.75rem;
+	padding-top: 11.25rem;
+	padding-bottom: 5.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	@include breakpoint1260{
+		min-height: 40rem;
+		padding-top: 8rem;
+	}
+	@include breakpoint1024{
+		margin-bottom: 5.5rem;
+	}
+	@include breakpoint768{
+		min-height: 35rem;
+		padding-top: 5.8rem;
+	}
+	&-title-area{
+		max-width: 54.6875rem;
+		margin: 0 auto 3.125rem;
+	}
+	&__title{
+		margin: 0 0 1.5rem;
+	}
+	&__text{
+		margin: 0;
+	}
+}

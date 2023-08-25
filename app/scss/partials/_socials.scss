@@ -1,0 +1,27 @@
+.socials{
+	display: flex;
+	align-items: center;
+	gap: 0.9375rem;
+	&__item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3.75rem;
+		height: 3.75rem;
+		border-radius: 1.875rem;
+		background-color: var(--color-saltpan);
+		transition: background .2s ease-in-out;
+		svg{
+			width: 1.1875rem;
+			height: 1.1875rem;
+			object-fit: cover;
+			@include breakpoint1024{
+				width: 1.625rem;
+				height: 1.625rem;
+			}
+		}
+		@include hover{
+			background-color: var(--color-green);
+		}
+	}
+}

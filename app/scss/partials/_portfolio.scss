@@ -1,0 +1,87 @@
+.portfolio{
+	padding-bottom: 8.75rem;
+	@include breakpoint1260{
+		padding-bottom: 6.5rem;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+		@include breakpoint1024{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include breakpoint576{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__content-wrap{
+		position: relative;
+		display: flex;
+		min-height: 26.3125rem;
+		margin-bottom: 1.125rem;
+		padding: 1.4375rem 1.5625rem;
+		border-radius: 1.875rem;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		&:hover .portfolio__content{
+			opacity: 1;
+			visibility: visible;
+		}
+		@include breakpoint1260{
+			min-height: 20.5rem;
+		}
+		@include breakpoint1024{
+			min-height: 24.5rem;
+		}
+		@include breakpoint768{
+			min-height: 16.5rem;
+		}
+		@include breakpoint576{
+			min-height: 20.5rem;
+		}
+		@include breakpoint390{
+			min-height: 16.5rem;
+		}
+	}
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		border-radius: inherit;
+		background: rgba(255, 255, 255, 0.91);
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+	}
+	&__button{
+		width: 2.875rem;
+		height: 2.875rem;
+		border-radius: 2.875rem;
+		background-color: var(--color-green);
+		background-image: url('../images/svg/arrow-right-2.svg');
+		background-repeat: no-repeat;
+		background-size: 1.25rem 0.9375rem;
+		background-position: center;
+		&::before{
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+	}
+	&__link{
+		display: inline-block;
+		&:hover .portfolio__name{
+			color: var(--color-green);
+		}
+	}
+	&__name{
+		margin: 0 0 0.5rem;
+		transition: color .2s ease-in-out;
+	}
+	&__category{
+		display: block;
+		font-size: 1.375rem;
+	}
+}

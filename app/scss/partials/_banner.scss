@@ -1,0 +1,80 @@
+.banner{
+	padding: 9.625rem 0 11.875rem;
+	@include breakpoint1450{
+		padding: 7.5rem 0;
+	}
+	@include breakpoint1260{
+		padding: 5.5rem 0;
+	}
+	@include breakpoint390{
+		padding: 3.5rem 0;
+	}
+	&__container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.25rem;
+		@include breakpoint1024{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__content{
+		max-width: 21.25rem;
+		padding: 0.9375rem 0.9375rem 0.9375rem 3.4375rem;
+		@include breakpoint576{
+			max-width: 100%;
+			padding: 0.9375rem 0.9375rem 0.9375rem 1.5rem;
+		}
+	}
+	&__label{
+		margin-bottom: 0.3125rem;
+	}
+	&__title{
+		margin: 0;
+		font-size: 2.5rem;
+		text-transform: none;
+		@include breakpoint1260{
+			font-size: 2.2rem;
+		}
+		@include breakpoint1024{
+			font-size: 2.5rem;
+		}
+		@include breakpoint576{
+			font-size: 1.75rem;
+		}
+		@include breakpoint390{
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.banner-natural, .banner-discount{
+	display: flex;
+	align-items: center;
+	min-height: 22.9375rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 1.875rem;
+	@include breakpoint1260{
+		min-height: 18rem;
+	}
+	@include breakpoint1024{
+		min-height: 25rem;
+	}
+	@include breakpoint576{
+		min-height: 16rem;
+	}
+	@include breakpoint390{
+		min-height: 12rem;
+	}
+}
+
+.banner-natural{
+	background-color: #f96893;
+	&__label, &__title{
+		color: var(--color-white);
+	}
+}
+.banner-discount{
+	background-color: #e6e7e9;
+}

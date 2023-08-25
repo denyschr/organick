@@ -1,0 +1,117 @@
+.home-hero{
+	min-height: 56.125rem;
+	display: flex;
+	@include breakpoint1450{
+		min-height: 50rem;
+	}
+	@include breakpoint1260{
+		min-height: 45rem;
+	}
+	@include breakpoint768{
+		min-height: 36rem;
+	}
+	@include breakpoint576{
+		min-height: 32rem;
+		background-position: left;
+	}
+	&__container{
+		position: relative;
+		z-index: 20;
+		display: grid;
+		grid-template-columns: 38.111888%;
+		flex-grow: 1;
+		align-items: center;
+		@include breakpoint1450{
+			grid-template-columns: 43%;
+		}
+		@include breakpoint1024{
+			grid-template-columns: 60%;
+		}
+		@include breakpoint768{
+			grid-template-columns: 65%;
+		}
+		@include breakpoint576{
+			grid-template-columns: 100%;
+		}
+	}
+	&__content{
+		padding: 2.5rem 0;
+	}
+	&__title{
+		margin: 0 0 1.4375rem;
+	}
+	&__icon_1{
+		position: absolute;
+		top: 2.115813%;
+		left: 0;
+		@include breakpoint1260{
+			width: 20%;
+		}
+		@include breakpoint768{
+			width: 30%;
+		}
+		@include breakpoint576{
+			width: 40%;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		top: 22.939866%;
+		left: 8.5rem;
+		@include breakpoint1450{
+			left: 18rem;
+			top: 18%;
+			width: 20%;
+		}
+		@include breakpoint576{
+			top: 10%;
+			left: 10rem;
+		}
+	}
+	&__icon_3{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		@include breakpoint1260{
+			width: 20%;
+		}
+		@include breakpoint768{
+			width: 30%;
+		}
+		@include breakpoint576{
+			width: 40%;
+		}
+	}
+	&__icon_4{
+		position: absolute;
+		top: 7.01559%;
+		left: 48.25rem;
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+	&__icon_5{
+		position: absolute;
+		top: 1.447661%;
+		right: 8.1875rem;
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+	&__icon_6{
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+	&__icon_7{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+}

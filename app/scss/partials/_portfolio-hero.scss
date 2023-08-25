@@ -1,0 +1,65 @@
+.portfolio-hero{
+	margin-bottom: 9.375rem;
+	@include breakpoint1260{
+		margin-bottom: 5.5rem;
+	}
+	@include breakpoint768{
+		margin-bottom: 3.5rem;
+	}
+	&__icon_1{
+		position: absolute;
+		left: 30%;
+		bottom: 14.210526%;
+		width: 8.75rem;
+		height: 6.25rem;
+		@include breakpoint1260{
+			left: 25%;
+		}
+		@include breakpoint1024{
+			left: 18%;
+			width: 6.875rem;
+		}
+		@include breakpoint768{
+			left: 10%;
+		}
+		@include breakpoint576{
+			left: 5%;
+			width: 5.625rem;
+			height: 5rem;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		left: 20%;
+		top: 27.631579%;
+		@include breakpoint1260{
+			left: 30%;
+			top: 6%;
+		}
+		@include breakpoint1024{
+			top: 10%;
+			width: 4.25rem;
+			height: 5rem;
+		}
+	}
+	&__icon_3{
+		position: absolute;
+		right: 25%;
+		bottom: 18.421053%;
+		width: 7.5625rem;
+		height: 5.5rem;
+		@include breakpoint1024{
+			right: 18%;
+			width: 6.25rem;
+			height: 4.25rem;
+		}
+		@include breakpoint768{
+			right: 12%;
+		}
+		@include breakpoint576{
+			right: 8%;
+			bottom: 15%;
+			width: 5rem;
+		}
+	}
+}

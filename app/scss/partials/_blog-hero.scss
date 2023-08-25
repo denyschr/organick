@@ -1,0 +1,91 @@
+.blog-hero{
+	margin-bottom: 7.3125rem;
+	@include breakpoint768{
+		margin-bottom: 5rem;
+	}
+	@include breakpoint576{
+		margin-bottom: 3.5rem;
+	}
+	&__icon_1{
+		position: absolute;
+		top: 3.157895%;
+		left: 10%;
+		@include breakpoint1260{
+			left: 20%;
+			width: 5.3125rem;
+			height: 5.625rem;
+		}
+		@include breakpoint768{
+			left: 8%;
+		}
+		@include breakpoint576{
+			width: 4.375rem;
+			height: 5.3125rem;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		top: 23.947368%;
+		left: 20%;
+		width: 6.875rem;
+		height: 5.625rem;
+		@include breakpoint1260{
+			top: unset;
+			bottom: 20%;
+			left: 25%;
+			width: 5.625rem;
+			height: 5rem;
+		}
+		@include breakpoint1024{
+			bottom: 12%;
+		}
+		@include breakpoint768{
+			left: 18%;
+		}
+		@include breakpoint576{
+			left: 10%;
+			width: 4.375rem;
+			height: 4.375rem;
+		}
+	}
+	&__icon_3{
+		position: absolute;
+		top: 28.684211%;
+		right: 25%;
+		width: 6.875rem;
+		height: 6.25rem;
+		@include breakpoint1260{
+			top: unset;
+			bottom: 10%;
+			width: 5.625rem;
+			height: 5rem;
+		}
+		@include breakpoint768{
+			right: 18%;
+		}
+		@include breakpoint576{
+			right: 12%;
+			width: 4.6875rem;
+			height: 3.75rem;
+		}
+	}
+	&__icon_4{
+		position: absolute;
+		top: 0;
+		right: 18%;
+		@include breakpoint1260{
+			top: 3%;
+			right: 23%;
+			width: 6.25rem;
+			height: 5.9375rem;
+		}
+		@include breakpoint768{
+			right: 8%;
+		}
+		@include breakpoint576{
+			top: 8%;
+			width: 5rem;
+			height: 4.6875rem;
+		}
+	}
+}

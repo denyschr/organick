@@ -1,0 +1,31 @@
+.search-form{
+	display: flex;
+	flex-grow: 1;
+	max-width: 23.5rem;
+	padding: 0.3125rem 0.375rem 0.3125rem 1.125rem;
+	border-radius: 2.25rem;
+	background-color: #fafafa;
+	@include breakpoint1260{
+		padding: 0.375rem 0.375rem 0.375rem 0.3125rem;
+	}
+	&__input{
+		@extend %rb-regular;
+		flex-grow: 1;
+		padding: 0 0.3125rem 0 0;
+		font-size: 1.125rem;
+		font-style: italic;
+		&::placeholder{
+			font: inherit;
+			color: var(--color-chalice);
+			font-size: inherit;
+			text-transform: capitalize;
+		}
+		@include breakpoint1260{
+			display: none;
+		}
+	}
+	&__button{
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+}

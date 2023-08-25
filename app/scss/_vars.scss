@@ -1,0 +1,50 @@
+%os-regular{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+%os-semibold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+%os-bold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+%rb-regular{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+%rb-medium{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+%rb-bold{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+%yt-regular{
+	font-family: 'Yellowtail', sans-serif;
+	font-weight: 400;
+}
+
+:root{
+		/*Base*/
+		--content-width: 87.5rem;
+		--container-offset: 0.9375rem;
+		--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+		--header-height: 204px;
+	
+		/*Colors*/
+		--color-white: #fff;
+		--color-black: #000;
+		--color-dianne: #274c5b;
+		--color-green: #7eb693;
+		--color-golden: #efd372;
+		--color-gray: #d4d4d4;
+		--color-alabaster: #f9f8f8;
+		--color-saltpan: #eff6f1;
+		--color-abbey: #525c60;
+		--color-silver: #b8b8b8;
+		--color-chalice: #ababab;
+		--color-blue: #3898ec;
+}

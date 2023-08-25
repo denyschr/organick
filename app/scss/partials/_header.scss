@@ -1,0 +1,59 @@
+.header{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.90);
+	transition: background .3s linear;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: var(--header-height);
+		padding-top: 0.3125rem;
+		padding-bottom: 0.3125rem;
+		transition: min-height .3s linear;
+		@include breakpoint1024{
+			min-height: 7.5rem;
+		}
+		@include breakpoint390{
+			min-height: 6.25rem;
+		}
+	}
+	&__logo{
+		@include breakpoint576{
+			width: 2.5rem;
+			flex-basis: 2.5rem;
+			overflow: hidden;
+		}
+		img{
+			@include breakpoint576{
+				max-width: unset;
+			}
+		}
+	}
+	&__actions{
+		display: flex;
+		flex-basis: 33.98773%;
+		align-items: center;
+		column-gap: 1.125rem;
+		@include breakpoint1450{
+			flex-basis: 39%;
+		}
+		@include breakpoint1260{
+			flex-basis: auto;
+			column-gap: 0.875rem;
+		}
+	}
+}
+
+.header.scroll{
+	background: var(--color-white);
+}
+
+.header.scroll .header__container{
+	@media (min-width: 64em){
+		min-height: 7.5rem;
+	}
+}

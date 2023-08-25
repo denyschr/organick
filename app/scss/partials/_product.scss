@@ -1,0 +1,130 @@
+.product{
+	padding: 8.3125rem 0 8.75rem;
+	border-top: 1px solid var(--color-gray);
+	@include breakpoint1260{
+		padding: 5.5rem 0;
+	}
+	@include breakpoint1024{
+		padding: 4rem 0;
+	}
+	@include breakpoint576{
+		padding: 3rem 0 4rem;
+	}
+	&__main{
+		display: grid;
+		grid-template-columns: 46.642857% 1fr;
+		margin-bottom: 6.25rem;
+		column-gap: 5.5rem;
+		@include breakpoint1260{
+			column-gap: 3.5rem;
+		}
+		@include breakpoint1024{
+			grid-template-columns: 1fr;
+			row-gap: 2.5rem;
+		}
+		@include breakpoint576{
+			margin-bottom: 4rem;
+		}
+	}
+	&__img-wrap{
+		position: relative;
+		border-radius: 1.875rem;
+		overflow: hidden;
+	}
+	&__tag{
+		position: absolute;
+		left: 5.359877%;
+		top: 5.965463%;
+	}
+	&__img{
+		height: 100%;
+		mix-blend-mode: multiply;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__content{
+		align-self: center;
+	}
+	&__title{
+		@extend %rb-bold;
+		margin: 0 0 0.5625rem;
+		font-size: 2.5rem;
+		@include breakpoint576{
+			font-size: 2rem;
+		}
+	}
+	&__rating{
+		margin-bottom: 0.5625rem;
+	}
+	&__price-wrap{
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.6875rem;
+		gap: 0.25rem;
+	}
+	&__strikethrough-pricing{
+		font-size: 1.25rem;
+	}
+	&__pricing{
+		font-size: 1.5625rem;
+	}
+	&__text{
+		margin: 0 0 2.1875rem;
+	}
+	&__descr{
+		p{
+			margin: 0;
+		}
+	}
+}
+
+.product-form{
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	@include breakpoint1260{
+		flex-direction: column;
+		align-items: start
+	}
+	@include breakpoint1024{
+		flex-direction: row;
+		align-items: center;
+	}
+	@include breakpoint576{
+		flex-direction: column;
+		align-items: start
+	}
+	&__quantity{
+		@include breakpoint390{
+			display: flex;
+			flex-direction: column;
+			row-gap: 0.9375rem;
+		}
+	}
+	&__field{
+		@extend %rb-bold;
+		margin-right: 0.75rem;
+		font-size: 1.25rem;
+	}
+	&__input{
+		@extend %rb-bold;
+		width: 8.375rem;
+		padding: 1.75rem 1.5rem 1.75rem 1.75rem;
+		text-align: center;
+		border-radius: 1rem;
+		border: 0.125rem solid var(--color-dianne);
+		background-color: var(--color-white);
+		font-size: 1.25rem;
+		&:focus{
+			border: 0.125rem solid var(--color-blue);
+		}
+		@include breakpoint576{
+			padding: 1.25rem 1.125rem 1.25rem 1.125rem;
+		}
+		@include breakpoint390{
+			padding: 1.125rem;
+		}
+	}
+}

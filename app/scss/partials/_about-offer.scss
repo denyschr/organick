@@ -1,0 +1,86 @@
+.about-offer{
+	margin-bottom: 8.75rem;
+	padding: 11.75rem 0;
+	background-color: var(--color-dianne);
+	@include breakpoint1260{
+		margin-bottom: 6.25rem;
+		padding: 8.125rem 0;
+	}
+	@include breakpoint1024{
+		padding: 5.5rem 0;
+	}
+	@include breakpoint768{
+		margin-bottom: 4.5rem;
+	}
+	@include breakpoint576{
+		padding: 4.5rem 0;
+	}
+	@include breakpoint390{
+		margin-bottom: 3rem;
+	}
+	&-title-area{
+		max-width: 46.875rem;
+		margin: 0 auto 2.0625rem;
+	}
+	&__title{
+		margin: 0;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.25rem;
+		@include breakpoint1024{
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include breakpoint768{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include breakpoint390{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__item{
+		position: relative;
+		text-align: center;
+	}
+	&__img{
+		margin-bottom: 1.5rem;
+		border-radius: 1.875rem;
+		overflow: hidden;
+		img{
+			width: 100%;
+		}
+	}
+	&__link{
+		display: inline-block;
+		&::before{
+			content: '';
+			position: absolute;
+			inset: 0;
+		}
+		@include hover{
+			.about-offer__subtitle{
+				color: var(--color-golden);
+			}
+			.about-offer__subtitle::before{
+				width: 100%;
+			}
+		}
+	}
+	&__subtitle{
+		position: relative;
+		padding-bottom: 0.125rem;
+		color: var(--color-white);
+		transition: color .2s ease-in-out;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0;
+			height: 0.125rem;
+			background-color: var(--color-alabaster);
+			transition: width .2s ease-in-out;
+		}
+	}
+}

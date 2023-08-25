@@ -1,0 +1,12 @@
+.related-products{
+	padding-bottom: 8.75rem;
+	@include breakpoint1260{
+		padding-bottom: 4rem;
+	}
+	&__title{
+		margin: 0 0 2.5rem;
+	}
+	&__listing{
+		margin: 0;
+	}
+}

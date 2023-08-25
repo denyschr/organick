@@ -1,0 +1,57 @@
+.home-offer{
+	background-color: var(--color-dianne);
+	&__container{
+		padding-top: 12.5rem;
+		padding-bottom: 12.5rem;
+		@include breakpoint1450{
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+		@include breakpoint390{
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+		}
+	}
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3.125rem;
+		@include breakpoint1024{
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			row-gap: 1.875rem;
+		}
+	}
+	&-title-area{
+		max-width: 40rem;
+		padding-right: 0.9375rem;
+		@include breakpoint1024{
+			max-width: 42.5rem;
+			padding-right: 0;
+		}
+		@include breakpoint768{
+			max-width: 100%;
+		}
+	}
+	&__button{
+		align-self: flex-end;
+		@include breakpoint1024{
+			align-self: flex-start;
+		}
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.25rem;
+		@include breakpoint1260{
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include breakpoint1024{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include breakpoint768{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}

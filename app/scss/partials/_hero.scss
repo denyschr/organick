@@ -1,0 +1,18 @@
+.hero{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: var(--color-saltpan);
+	&__container{
+		position: relative;
+		overflow: hidden;
+	}
+	&__content{
+		padding: 9.375rem 0;
+		text-align: center;
+		@include breakpoint1260{
+			padding: 7.5rem 0;
+		}
+	}
+}

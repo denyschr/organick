@@ -1,0 +1,93 @@
+.subscribe{
+	margin-bottom: 7.3125rem;
+	@include breakpoint1024{
+		margin-bottom: 5rem;
+	}
+	@include breakpoint390{
+		margin-bottom: 3rem;
+	}
+	&__wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 6.5625rem 4.375rem;
+		border-radius: 1.875rem;
+		background-color: var(--color-golden);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		@include breakpoint1260{
+			flex-direction: column;
+			text-align: center;
+			row-gap: 0.9375rem;
+		}
+		@include breakpoint768{
+			padding: 4.5rem 4.375rem;
+		}
+		@include breakpoint576{
+			padding: 3.5rem 2rem;
+		}
+		@include breakpoint390{
+			padding: 2rem;
+		}
+	}
+	&__title{
+		max-width: 22.3125rem;
+		margin: 0;
+		margin-right: 0.9375rem;
+		@include breakpoint1260{
+			margin-right: 0;
+		}
+	}
+}
+
+.subscribe-form-wrap{
+	flex-basis: 45.03876%;
+	@include breakpoint1260{
+		width: 100%;
+	}
+}
+
+.subscribe-form{
+	display: flex;
+	gap: 0.375rem;
+	@include breakpoint1260{
+		max-width: 35.5rem;
+		margin: 0 auto;
+	}
+	@include breakpoint768{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	&__input{
+		@extend %rb-regular;
+		flex-grow: 1;
+		padding: 1.75rem 1.4375rem 1.9375rem;
+		border-radius: 1rem;
+		border: 0.0625rem solid var(--color-chalice);
+		background-color: var(--color-white);
+		font-style: italic;
+		color: var(--color-chalice);
+		font-size: 1.125rem;
+		&::placeholder{
+			font: inherit;
+			color: inherit;
+			font-size: inherit;
+			text-transform: capitalize;
+			@include breakpoint768{
+				text-align: center;
+			}
+		}
+		&:focus{
+			outline: 0;
+			border: 0.0625rem solid var(--color-blue);
+		}
+		@include breakpoint768{
+			text-align: center;
+		}
+		@include breakpoint390{
+			padding: 1.5rem 1.4375rem;
+			font-size: 1rem;
+		}
+	}
+}

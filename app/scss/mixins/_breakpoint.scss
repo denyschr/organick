@@ -1,0 +1,35 @@
+@mixin breakpoint1450 {
+  @media (max-width: (90.6238em)) {
+    @content;
+  }
+}
+
+@mixin breakpoint1260 {
+  @media (max-width: (78.7488em)) {
+    @content;
+  }
+}
+
+@mixin breakpoint1024 {
+  @media (max-width: (63.9988em)) {
+    @content;
+  }
+}
+
+@mixin breakpoint768 {
+  @media (max-width: (47.9988em)) {
+    @content;
+  }
+}
+
+@mixin breakpoint576 {
+  @media (max-width: (35.9988em)) {
+    @content;
+  }
+}
+
+@mixin breakpoint390 {
+  @media (max-width: (24.3738em)) {
+    @content;
+  }
+}

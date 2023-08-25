@@ -1,0 +1,83 @@
+.shop-hero{
+	margin-bottom: 5.625rem;
+	@include breakpoint768{
+		margin-bottom: 4.5rem;
+	}
+	&__icon_1{
+		position: absolute;
+		left: 30%;
+		top: 4%;
+		width: 8.75rem;
+		height: 6.25rem;
+		@include breakpoint1260{
+			width: 6.25rem;
+			height: 5.625rem;
+		}
+		@include breakpoint576{
+			left: 10%;
+		}
+		@include breakpoint390{
+			left: 5%;
+		}
+	}
+	&__icon_2{
+		position: absolute;
+		left: 34%;
+		bottom: 10.368421%;
+		@include breakpoint1260{
+			left: 35%;
+			width: 4.25rem;
+			height: 5rem;
+		}
+		@include breakpoint1024{
+			bottom: 7%;
+		}
+		@include breakpoint576{
+			left: 25%;
+		}
+		@include breakpoint390{
+			left: 10%;
+		}
+	}
+	&__icon_4{
+		position: absolute;
+		right: 26%;
+		top: 0;
+		transform: rotate(100deg);
+		width: 6.875rem;
+		height: 6.125rem;
+		@include breakpoint1260{
+			width: 5.625rem;
+			height: 4.875rem;
+		}
+		@include breakpoint576{
+			top: 10%;
+			right: 15%;
+		}
+		@include breakpoint390{
+			right: 8%;
+		}
+	}
+	&__icon_5{
+		position: absolute;
+		left: 45%;
+		bottom: 8%;
+		width: 7.5625rem;
+		height: 5.625rem;
+		@include breakpoint1260{
+			width: 6.25rem;
+			height: 5rem;
+		}
+		@include breakpoint1024{
+			left: unset;
+			right: 20%;
+		}
+		@include breakpoint576{
+			width: 5rem;
+			height: 3.75rem;
+		}
+		@include breakpoint390{
+			right: 12%;
+		}
+	}
+}

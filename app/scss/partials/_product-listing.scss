@@ -1,0 +1,74 @@
+.product-listing{
+	max-width: 100%;
+	margin-bottom: 7.625rem;
+	@include breakpoint1450{
+		margin-bottom: 5.625rem;
+	}
+	@include breakpoint390{
+		margin-bottom: 4rem;
+	}
+	&__slides{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.25rem;
+		@include breakpoint1260{
+			display: flex;
+			gap: 0;
+		}
+	}
+}
+.product-card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 1.875rem;
+	background: var(--color-alabaster);
+}
+.product-article{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 1.875rem 1.625rem 1.0625rem 1.875rem;
+	&__img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: auto;
+		margin-bottom: 0.25rem;
+		mix-blend-mode: multiply;
+	}
+	&__title{
+		@extend %rb-medium;
+		display: flex;
+		margin: 0 0 0.5rem;
+		padding-bottom: 0.8125rem;
+		border-bottom: 0.0625rem solid #dedddd;
+		font-size: 1.25rem;
+	}
+	&__link{
+		transition: color .2s ease-in-out;
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 4;
+			inset: 0;
+		}
+		@include hover{
+			color: var(--color-green);
+		}
+	}
+	&__bottom{
+		margin-top: auto;
+	}
+	&__box{
+		position: relative;
+		z-index: 5;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__price{
+		margin-right: 0.5rem;
+	}
+}

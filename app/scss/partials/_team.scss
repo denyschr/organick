@@ -1,0 +1,76 @@
+.team{
+	padding-bottom: 7.5rem;
+	@include breakpoint1024{
+		padding-bottom: 5.5rem;
+	}
+	@include breakpoint576{
+		padding-bottom: 4.5rem;
+	}
+	&-title-area{
+		max-width: 46.875rem;
+		margin: 0 auto;
+		margin-bottom: 2.5625rem;
+	}
+	&__title{
+		margin: 0 0 1rem;
+	}
+	&__text{
+		margin: 0;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.6875rem;
+		@include breakpoint1024{
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include breakpoint576{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.team-member{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	&__img{
+		border-radius: 1.875rem 1.875rem 0 0;
+		overflow: hidden;
+		img{
+			width: 100%;
+		}
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+		gap: 0.5rem;
+		padding: 2.1875rem 1.75rem 2.125rem;
+		border-radius: 0 0 1.875rem 1.875rem;
+		background-color: var(--color-alabaster);
+		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+		@include hover{
+			background-color: var(--color-white);
+			box-shadow: 0 1.8125rem 2.75rem rgba(150, 150, 150, 0.25);
+		}
+		@include breakpoint1260{
+			flex-direction: column;
+			justify-content: start;
+		}
+	}
+	&__name{
+		margin: 0 0 0.3125rem;
+	}
+	&__job{
+		font-size: 1.375rem;
+	}
+	&__socials{
+		display: flex;
+		gap: 1.0625rem;
+		align-self: flex-end;
+		@include breakpoint1260{
+			align-self: flex-start;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.progress{
+	padding-top: 6.375rem;
+	border-top: 0.125rem solid #e0e0e0;
+	@include breakpoint1260{
+		padding-top: 4rem;
+	}
+	&__list{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 64.375rem;
+		margin: 0 auto;
+		gap: 3.875rem;
+		@include breakpoint1260{
+			grid-template-columns: repeat(2, 1fr);
+			max-width: 43.75rem;
+		}
+		@include breakpoint1024{
+			gap: 2rem;
+		}
+		@include breakpoint576{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.progress-element{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__circle{
+		position: relative;
+		width: 13.1875rem;
+		height: 13.1875rem;
+		img{
+			position: absolute;
+			inset: 0;
+		}
+
+	}
+	&__content{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center
+	}
+	&__text{
+		@extend %os-semibold;
+		font-size: 1.125rem;
+		line-height: 1.65;
+	}
+}

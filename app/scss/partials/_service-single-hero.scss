@@ -1,0 +1,9 @@
+.service-single-hero{
+	margin-bottom: 11.375rem;
+	@include breakpoint1450{
+		margin-bottom: 5.5rem;
+	}
+	@include breakpoint1024{
+		margin-bottom: 3.5rem;
+	}
+}
