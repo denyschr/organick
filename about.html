@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organick</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="overlay"></div>
+		<header class="header">
+			<div class="big-container header__container">
+				<a class="header__logo" href="index.html">
+					<img src="images/svg/logo.svg" width="199" height="54" alt="Company logo">
+				</a>
+				<nav class="nav" title="Main menu">
+					<ul class="list-reset nav__list">
+						<li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+						<li class="nav__item"><a class="nav__link nav__link--current" href="about.html">About Us</a></li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--drop">Pages</a>
+							<ul class="list-reset nav__list nav__list--dropdown dropdown-list">
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="services.html">Services</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="service-single.html">Service Single</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link"
+										href="portfolio.html">Portfolio</a></li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link" href="team.html">Our Team</a>
+								</li>
+								<li class="dropdown-list__item"><a class="nav__link dropdown-list__link" href="blog.html">Blog</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a class="nav__link" href="shop.html">Shop</a></li>
+						<li class="nav__item"><a class="nav__link" href="contacts.html">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<form class="search-form" action="#">
+						<input class="input-reset search-form__input" autocomplete="off" type="search" name="search"
+							placeholder="Type to search...">
+						<button class="button-reset search-form__button" type="button" aria-label="Search">
+							<img src="images/svg/search.svg" alt="">
+						</button>
+					</form>
+					<button class="button-reset cart">Cart (<span>0</span>)</button>
+					<button class="burger" aria-label="Open menu" aria-expanded="false">
+						<span class="burger__line"></span>
+					</button>
+				</div>
+				<div class="modal modal-search">
+					<div class="modal__area modal-search__area">
+						<button class="button-reset modal__close modal-search__close" type="button"></button>
+						<form class="form-area" action="#">
+							<input class="input-reset form-area__input" type="search" placeholder="Search ..." autocomplete="off">
+							<button class="button-reset button form-area__button">Go</button>
+						</form>
+					</div>
+				</div>
+				<div class="modal modal-cart">
+					<div class="modal__area modal-cart__area">
+						<div class="modal-cart__wrap">
+							<div class="modal-cart__top">
+								<span class="title-reset modal-cart__name">Your Cart</span>
+								<button class="button-reset modal__close modal-cart__close" type="button"></button>
+							</div>
+							<div class="modal-cart__body">
+								<div class="text modal-cart__state">No items found.</div>
+								<a class="dianne-button modal-cart__link" href="shop.html">Go to shopping</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="about-hero hero" style="background-image: url('images/about-hero-bg.jpg');">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<h1 class="title-reset main-title">About us</h1>
+					</div>
+					<div class="about-hero__icons">
+						<div class="about-hero__icon_1">
+							<img src="images/svg/decor-1.svg" aria-hidden="true" alt="">
+						</div>
+						<div class="about-hero__icon_2">
+							<img src="images/svg/decor-2.svg" aria-hidden="true" alt="">
+						</div>
+						<div class="about-hero__icon_3">
+							<img src="images/svg/decor-3.svg" aria-hidden="true" alt="">
+						</div>
+						<div class="about-hero__icon_4">
+							<img src="images/svg/decor-4.svg" aria-hidden="true" alt="">
+						</div>
+						<div class="about-hero__icon_5">
+							<img src="images/svg/decor-5.svg" aria-hidden="true" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="big-container about__container">
+					<div class="about__img">
+						<picture>
+							<source srcset="images/about.webp" type="image/webp">
+							<img src="images/about.png" alt="Vegetables">
+						</picture>
+					</div>
+					<div class="about__content">
+						<div class="label">Only Pure And Organic</div>
+						<h2 class="section-title about__title">Fresh From Farm Return To Purity</h2>
+						<div class="text about__text">
+							<p>
+								Our rich experience helps us in ensuring that the products brought to you are 100% chemical-free. To
+								live a better, healthier, and wholesome life by providing them with 100% certified, authentic organic
+								food.
+							</p>
+							<p>
+								Welcome to the world of nature and organic. Here you can discover the bounty of nature. We have grown on
+								the principles of health and care. We aim to give our customers a healthy chemical-free meal for perfect
+								nutrition.
+							</p>
+						</div>
+						<ul class="list-reset about__list">
+							<li class="about__item about-point">
+								<h3 class="medium-title about-point__title">Modern Agriculture Equipment</h3>
+							</li>
+							<li class="about__item about-point">
+								<h3 class="medium-title about-point__title">No Chemicals & Hormones Are Used</h3>
+							</li>
+						</ul>
+						<a class="dianne-button" href="services.html">Explore More</a>
+					</div>
+				</div>
+			</section>
+			<section class="choose">
+				<div class="container choose__container">
+					<div class="choose__main">
+						<div class="choose__content">
+							<div class="label">Why Organick Store?</div>
+							<h2 class="section-title choose__title">We Cultivating The Chemical & Fertilizer Free Products</h2>
+							<div class="text choose__text">
+								<p>
+									After a lot of struggles in our lives, we now are popular and now we are producing the best organic
+									products. Initially.
+								</p>
+							</div>
+							<ul class="list-reset choose-points">
+								<li class="choose-point">
+									<span class="choose-point__heading">100% Natural Product</span>
+									<p class="text choose-point__descr">
+										In our listing, we have several collections of organic products and place where you need to choose
+										the product you want.
+									</p>
+								</li>
+								<li class="choose-point">
+									<span class="choose-point__heading">Same Day Delivery</span>
+									<p class="text choose-point__descr">
+										If you are not comfortable going to the nearby market place we also will deliver your product to
+										your doorstep.
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="choose__img">
+							<picture>
+								<source srcset="images/choose.webp" type="image/webp">
+								<img src="images/choose.jpg" alt="Natural products">
+							</picture>
+						</div>
+					</div>
+					<ul class="list-reset choose-features">
+						<li class="choose-feature">
+							<div class="choose-feature__content choose-feature__return">
+								<h3 class="bold-title choose-feature__title">Return Policy</h3>
+								<p class="text choose-feature__descr">If the product having any issues you can return the product.</p>
+							</div>
+						</li>
+						<li class="choose-feature">
+							<div class="choose-feature__content choose-feature__fresh">
+								<h3 class="bold-title choose-feature__title">100% Fresh</h3>
+								<p class="text choose-feature__descr">Fully organic and fresh products are delivered at door step.</p>
+							</div>
+						</li>
+						<li class="choose-feature">
+							<div class="choose-feature__content choose-feature__support">
+								<h3 class="bold-title choose-feature__title">Support 24/7</h3>
+								<p class="text choose-feature__descr">Our support team is available for take care the customers.</p>
+							</div>
+						</li>
+						<li class="choose-feature">
+							<div class="choose-feature__content choose-feature__payment">
+								<h3 class="bold-title choose-feature__title">Secured Payment</h3>
+								<p class="text choose-feature__descr">Fully secured payment methods are used for buying product.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="team">
+				<div class="container">
+					<div class="text-center team-title-area">
+						<div class="label">The Team</div>
+						<h2 class="section-title team__title">Our Organic Experts</h2>
+						<p class="text team__text">
+							We have grown on the principles of health, ecology, and care. We aim to give our
+							customers a healthy chemical-free meal for perfect nutrition.
+						</p>
+					</div>
+					<ul class="list-reset team__list">
+						<li class="team__item">
+							<div class="team-member">
+								<div class="team-member__img">
+									<picture>
+										<source srcset="images/giovani-bacardo.webp" type="image/webp">
+										<img src="images/giovani-bacardo.jpg" alt="Giovani Bacardo">
+									</picture>
+								</div>
+								<div class="team-member__content">
+									<div class="team-member__box">
+										<h3 class="bold-title team-member__name">Giovani Bacardo</h3>
+										<div class="label team-member__job">Farmer</div>
+									</div>
+									<div class="team-member__socials">
+										<a class="team-member__social" href="#" target="_blank" aria-label="Facebook">
+											<img src="images/svg/facebook.svg" alt="">
+										</a>
+										<a class="team-member__social" href="#" target="_blank" aria-label="Twitter">
+											<img src="images/svg/twitter.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="team__item">
+							<div class="team-member">
+								<div class="team-member__img">
+									<picture>
+										<source srcset="images/marianne-loreno.webp" type="image/webp">
+										<img src="images/marianne-loreno.jpg" alt="Marianne Loreno">
+									</picture>
+								</div>
+								<div class="team-member__content">
+									<div class="team-member__box">
+										<h3 class="bold-title team-member__name">Marianne Loreno</h3>
+										<div class="label team-member__job">Marketing</div>
+									</div>
+									<div class="team-member__socials">
+										<a class="team-member__social" href="#" target="_blank" aria-label="Instagram">
+											<img src="images/svg/instagram.svg" alt="">
+										</a>
+										<a class="team-member__social" href="#" target="_blank" aria-label="Facebook">
+											<img src="images/svg/facebook.svg" alt="">
+										</a>
+										<a class="team-member__social" href="#" target="_blank" aria-label="Twitter">
+											<img src="images/svg/twitter.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="team__item">
+							<div class="team-member">
+								<div class="team-member__img">
+									<picture>
+										<source srcset="images/riga-pelore.webp" type="image/webp">
+										<img src="images/riga-pelore.jpg" alt="Riga Pelore">
+									</picture>
+								</div>
+								<div class="team-member__content">
+									<div class="team-member__box">
+										<h3 class="bold-title team-member__name">Riga Pelore</h3>
+										<div class="label team-member__job">Financiar</div>
+									</div>
+									<div class="team-member__socials">
+										<a class="team-member__social" href="#" target="_blank" aria-label="Instagram">
+											<img src="images/svg/instagram.svg" alt="">
+										</a>
+										<a class="team-member__social" href="#" target="_blank" aria-label="Facebook">
+											<img src="images/svg/facebook.svg" alt="">
+										</a>
+										<a class="team-member__social" href="#" target="_blank" aria-label="Twitter">
+											<img src="images/svg/twitter.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="about-offer">
+				<div class="container">
+					<div class="text-center about-offer-title-area">
+						<div class="label">The Products</div>
+						<h2 class="section-title-white about-offer__title">We Offer Organic For You</h2>
+					</div>
+					<ul class="list-reset about-offer__list">
+						<li class="about-offer__item">
+							<div class="about-offer__img">
+								<picture>
+									<source srcset="images/spicy.webp" type="image/webp">
+									<img src="images/spicy.jpg" alt="Spicy">
+								</picture>
+							</div>
+							<a class="about-offer__link" href="shop.html">
+								<h3 class="medium-title title-reset about-offer__subtitle">Spicy</h3>
+							</a>
+						</li>
+						<li class="about-offer__item">
+							<div class="about-offer__img">
+								<picture>
+									<source srcset="images/nuts-feeds.webp" type="image/webp">
+									<img src="images/nuts-feeds.jpg" alt="Nuts and feeds">
+								</picture>
+							</div>
+							<a class="about-offer__link" href="shop.html">
+								<h3 class="medium-title title-reset about-offer__subtitle">Nuts & Feeds</h3>
+							</a>
+						</li>
+						<li class="about-offer__item">
+							<div class="about-offer__img">
+								<picture>
+									<source srcset="images/fruits.webp" type="image/webp">
+									<img src="images/fruits.jpg" alt="Fruits">
+								</picture>
+							</div>
+							<a class="about-offer__link" href="shop.html">
+								<h3 class="medium-title title-reset about-offer__subtitle">Fruits</h3>
+							</a>
+						</li>
+						<li class="about-offer__item">
+							<div class="about-offer__img">
+								<picture>
+									<source srcset="images/vegetables.webp" type="image/webp">
+									<img src="images/vegetables.jpg" alt="Vegetables">
+								</picture>
+							</div>
+							<a class="about-offer__link" href="shop.html">
+								<h3 class="medium-title title-reset about-offer__subtitle">Vegetables</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="container subscribe__container">
+					<div class="subscribe__wrap" style="background-image: url('images/subscribe-bg.jpg');">
+						<h2 class="section-title-white subscribe__title">Subscribe to our Newsletter</h2>
+						<div class="subscribe-form-wrap">
+							<form class="subscribe-form" action="#">
+								<input class="input-reset subscribe-form__input" name="email" type="email"
+									placeholder="Enter Your Email Address" autocomplete="off">
+								<button class="button subscribe-form__button" type="submit">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer-column-contacts">
+					<h2 class="footer-column-contacts__title footer__title">Contact Us</h2>
+					<address class="footer-address">
+						<span class="text footer-address__item">
+							<span class="footer-address__name">Email</span>
+							<a href="mailto:needhelp@organick.com" class="footer__link">
+								needhelp@organick.com
+							</a>
+						</span>
+						<span class="text footer-address__item">
+							<span class="footer-address__name">Phone</span>
+							<a href="tel:12312541452" class="footer__link">
+								123 (1254) 1452
+							</a>
+						</span>
+						<span class="text footer-address__item">
+							<span class="footer-address__name">Address</span>
+							<span class="footer-address__text">88 Road, Brooklyn Street, USA</span>
+						</span>
+					</address>
+				</div>
+				<div class="footer-column-about text-center">
+					<a class="footer__logo" href="#">
+						<img src="images/svg/logo.svg" width="199" height="54" alt="Company logo">
+					</a>
+					<p class="text footer-column-about__text">
+						We are a popular and farming company aspiring to be a leader in the Organic food industry.
+					</p>
+					<div class="socials footer__socials">
+						<a class="socials__item footer__social" target="_blank" href="#" aria-label="Instagram">
+							<svg>
+								<use xlink:href="images/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+						<a class="socials__item footer__social" target="_blank" href="#" aria-label="Facebook">
+							<svg>
+								<use xlink:href="images/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+						<a class="socials__item footer__social" target="_blank" href="#" aria-label="Twitter">
+							<svg>
+								<use xlink:href="images/sprite.svg#twitter"></use>
+							</svg>
+						</a>
+						<a class="socials__item footer__social" target="_blank" href="#" aria-label="Pinterest">
+							<svg>
+								<use xlink:href="images/sprite.svg#pinterest"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-column-utility">
+					<h2 class="footer-column-utility__title footer__title">Utility Pages</h2>
+					<ul class="list-reset footer-column-utility__list">
+						<li class="footer-column-utility__item">
+							<a class="text footer__link footer-column-utility__link" href="#">Style Guide</a>
+						</li>
+						<li class="footer-column-utility__item">
+							<a class="text footer__link footer-column-utility__link" href="#">404 Not Found</a>
+						</li>
+						<li class="footer-column-utility__item">
+							<a class="text footer__link footer-column-utility__link" href="#">Password Protected</a>
+						</li>
+						<li class="footer-column-utility__item">
+							<a class="text footer__link footer-column-utility__link" href="#">Licences</a>
+						</li>
+						<li class="footer-column-utility__item">
+							<a class="text footer__link footer-column-utility__link" href="#">Changelog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-line">
+				<div class="container text-center footer-line__container">
+					<small class="text footer__copy">
+						Copyright © <span>Organick</span> | All rights reserved
+					</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
