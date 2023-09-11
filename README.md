@@ -1,4 +1,4 @@
-# [Grocery shopping site](https://dchornoivanenko.github.io/organick/)
+# [Grocery shopping site](https://denyschr.github.io/alowishus/)
 ## What I used:
 - HTML
 - CSS
